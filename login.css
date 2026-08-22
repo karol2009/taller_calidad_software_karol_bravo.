@@ -1,0 +1,405 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   FONDO DEL LOGIN
+   ========================================= */
+
+.login-container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+
+    background: linear-gradient(
+        180deg,
+        #a9c6df 0%,
+        #b5add8 30%,
+        #ce8bc5 65%,
+        #e967b0 100%
+    );
+}
+
+
+/* =========================================
+   TARJETA PRINCIPAL
+   ========================================= */
+
+.login-card {
+    width: 500px;
+    min-height: 560px;
+
+    background: white;
+
+    border-radius: 40px;
+
+    padding: 35px 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow:
+        0 20px 45px rgba(75, 40, 90, 0.30);
+}
+
+
+/* =========================================
+   CÍRCULO DEL USUARIO
+   ========================================= */
+
+.user-icon {
+    width: 120px;
+    height: 120px;
+
+    background: #ce8ac5;
+
+    border-radius: 50%;
+
+    position: relative;
+
+    margin-bottom: 25px;
+}
+
+
+/* Cabeza */
+
+.head {
+    width: 40px;
+    height: 40px;
+
+    border: 5px solid white;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 27px;
+    left: 40px;
+}
+
+
+/* Cuerpo */
+
+.body-icon {
+    width: 80px;
+    height: 43px;
+
+    border: 5px solid white;
+
+    border-bottom: 0;
+
+    border-radius: 50px 50px 0 0;
+
+    position: absolute;
+
+    bottom: 22px;
+    left: 20px;
+}
+
+
+/* =========================================
+   TÍTULO
+   ========================================= */
+
+.login-card h1 {
+    color: #ce8ac5;
+
+    font-size: 28px;
+
+    margin-bottom: 7px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   MENSAJE DE BIENVENIDA
+   ========================================= */
+
+.welcome {
+    color: #777;
+
+    font-size: 17px;
+
+    margin-bottom: 28px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   FORMULARIO
+   ========================================= */
+
+.login-card form {
+    width: 100%;
+}
+
+
+/* =========================================
+   CAMPOS
+   ========================================= */
+
+.input-container {
+    width: 100%;
+    height: 58px;
+
+    border: 2px solid #d58bc9;
+
+    border-radius: 35px;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 16px;
+
+    padding: 0 20px;
+
+    background: white;
+
+    transition: 0.3s;
+}
+
+
+/* Efecto al seleccionar */
+
+.input-container:focus-within {
+    border-color: #b96caf;
+
+    box-shadow:
+        0 0 0 4px rgba(206, 138, 197, 0.15);
+}
+
+
+/* =========================================
+   ICONOS DE LOS CAMPOS
+   ========================================= */
+
+.input-icon {
+    width: 35px;
+
+    font-size: 22px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   INPUT
+   ========================================= */
+
+.input-container input {
+    flex: 1;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 16px;
+
+    color: #555;
+
+    padding-left: 8px;
+
+    background: transparent;
+}
+
+
+.input-container input::placeholder {
+    color: #999;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   BOTÓN DE INICIAR SESIÓN
+   ========================================= */
+
+.login-button {
+    width: 100%;
+
+    height: 58px;
+
+    margin-top: 18px;
+
+    border: none;
+
+    border-radius: 35px;
+
+    background: #ce8ac5;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Efecto del botón */
+
+.login-button:hover {
+    background: #b96caf;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(190, 100, 175, 0.30);
+}
+
+
+/* Cuando se presiona */
+
+.login-button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   SECCIÓN DE REGISTRO
+   ========================================= */
+
+.register {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 28px;
+
+    color: #666;
+
+    font-size: 15px;
+}
+
+
+/* Enlace de registro */
+
+.register a {
+    color: #ce8ac5;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.register a:hover {
+    color: #a9579d;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   VERSIÓN PARA CELULARES
+   ========================================= */
+
+@media (max-width: 750px) {
+
+    .login-container {
+        padding: 20px;
+    }
+
+
+    .login-card {
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 35px 25px;
+
+        border-radius: 30px;
+    }
+
+
+    .user-icon {
+        width: 110px;
+        height: 110px;
+
+        margin-bottom: 22px;
+    }
+
+
+    .head {
+        width: 38px;
+        height: 38px;
+
+        left: 36px;
+        top: 25px;
+    }
+
+
+    .body-icon {
+        width: 74px;
+        height: 40px;
+
+        left: 18px;
+
+        bottom: 20px;
+    }
+
+
+    .login-card h1 {
+        font-size: 25px;
+    }
+
+
+    .welcome {
+        font-size: 16px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .input-container {
+        height: 55px;
+    }
+
+
+    .login-button {
+        height: 55px;
+
+        font-size: 16px;
+    }
+
+
+    .register {
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+    }
+
+}

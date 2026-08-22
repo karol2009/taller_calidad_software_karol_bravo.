@@ -1,0 +1,405 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   FONDO
+   ========================================= */
+
+.registro-container {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 25px;
+
+    background: linear-gradient(
+        180deg,
+        #a9c6df 0%,
+        #b5add8 30%,
+        #ce8bc5 65%,
+        #e967b0 100%
+    );
+}
+
+
+/* =========================================
+   TARJETA
+   ========================================= */
+
+.registro-card {
+
+    width: 500px;
+
+    min-height: 560px;
+
+    background: white;
+
+    border-radius: 40px;
+
+    padding: 35px 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    box-shadow:
+        0 20px 45px rgba(75, 40, 90, 0.30);
+}
+
+
+/* =========================================
+   ICONO DE FRUTA
+   ========================================= */
+
+.fruit-icon {
+
+    width: 120px;
+
+    height: 120px;
+
+    background: #ce8ac5;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 8px 15px rgba(190, 100, 175, 0.20);
+}
+
+
+.fruit-icon span {
+
+    font-size: 65px;
+
+}
+
+
+/* =========================================
+   TITULO
+   ========================================= */
+
+.registro-card h1 {
+
+    color: #ce8ac5;
+
+    font-size: 28px;
+
+    margin-bottom: 7px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   MENSAJE
+   ========================================= */
+
+.welcome {
+
+    color: #777;
+
+    font-size: 17px;
+
+    margin-bottom: 28px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   FORMULARIO
+   ========================================= */
+
+.registro-card form {
+
+    width: 100%;
+}
+
+
+/* =========================================
+   CAMPOS
+   ========================================= */
+
+.input-container {
+
+    width: 100%;
+
+    height: 58px;
+
+    border: 2px solid #d58bc9;
+
+    border-radius: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 16px;
+
+    padding: 0 20px;
+
+    background: white;
+
+    transition: 0.3s;
+}
+
+
+/* Efecto al seleccionar */
+
+.input-container:focus-within {
+
+    border-color: #b96caf;
+
+    box-shadow:
+        0 0 0 4px rgba(206, 138, 197, 0.15);
+}
+
+
+/* =========================================
+   ICONOS
+   ========================================= */
+
+.input-icon {
+
+    width: 35px;
+
+    font-size: 22px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   INPUT
+   ========================================= */
+
+.input-container input {
+
+    flex: 1;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 16px;
+
+    color: #555;
+
+    padding-left: 8px;
+
+    background: transparent;
+}
+
+
+.input-container input::placeholder {
+
+    color: #999;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   BOTÓN REGISTRARSE
+   ========================================= */
+
+.registro-button {
+
+    width: 100%;
+
+    height: 58px;
+
+    margin-top: 18px;
+
+    border: none;
+
+    border-radius: 35px;
+
+    background: #ce8ac5;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Efecto del botón */
+
+.registro-button:hover {
+
+    background: #b96caf;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(190, 100, 175, 0.30);
+}
+
+
+/* Cuando se presiona */
+
+.registro-button:active {
+
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   ENLACE PARA VOLVER AL LOGIN
+   ========================================= */
+
+.login-link {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 28px;
+
+    color: #666;
+
+    font-size: 15px;
+}
+
+
+.login-link a {
+
+    color: #ce8ac5;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.login-link a:hover {
+
+    color: #a9579d;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   CELULARES
+   ========================================= */
+
+@media (max-width: 750px) {
+
+    .registro-container {
+
+        padding: 20px;
+    }
+
+
+    .registro-card {
+
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 35px 25px;
+
+        border-radius: 30px;
+    }
+
+
+    .fruit-icon {
+
+        width: 110px;
+
+        height: 110px;
+
+        margin-bottom: 22px;
+    }
+
+
+    .fruit-icon span {
+
+        font-size: 58px;
+    }
+
+
+    .registro-card h1 {
+
+        font-size: 25px;
+    }
+
+
+    .welcome {
+
+        font-size: 16px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .input-container {
+
+        height: 55px;
+    }
+
+
+    .registro-button {
+
+        height: 55px;
+
+        font-size: 16px;
+    }
+
+
+    .login-link {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+    }
+
+}
