@@ -64,14 +64,17 @@
 
                     <span class="input-icon">🔒</span>
 
-                    <input
-                        type="password"
-                        name="contrasena"
-                        placeholder="Contraseña"
-                        required
-                    >
+                <label for="contrasena">Contraseña</label>
 
-                </div>
+<input
+    type="password"
+    id="contrasena"
+    name="contrasena"
+    placeholder="Contraseña"
+    required
+>
+
+                </div>ss
 
 
                 <button
